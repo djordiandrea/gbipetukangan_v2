@@ -17,7 +17,7 @@ var jemaat = {
                 jemaatBody += '<td>'+jmt.dob+'</td>';
                 jemaatBody += '<td>'+jmt.number+'</td>';
                 jemaatBody += '<td>'+jmt.address+'</td>';
-                jemaatBody += '<td><button class="btn btn-primary" type="button">Edit </button> <button class="btn btn-danger" type="button">Delete</button></td>';
+                jemaatBody += '<td><button class="btn btn-primary btn-edit" type="button" value"">Edit </button> <button class="btn btn-danger" type="button">Delete</button></td>';
                 jemaatBody += '</tr>';
             }
             $('#tbodyJemaat').html(jemaatBody);
