@@ -10,6 +10,8 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
 </head>
 <style>
     .load-gif {
@@ -41,10 +43,56 @@
         z-index: 9999;
         /* Pastikan overlay berada di atas elemen lain */
     }
+
+    .navbar-brand img {
+        height: 40px;
+        width: auto;
+        margin-top: -10px;
+        /* Sesuaikan jika perlu */
+    }
+
+    .table-responsive-custom {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .table-fixed-header thead th {
+        position: sticky;
+        top: 0;
+        background: #f9f9f9;
+        /* Bisa kamu ganti */
+        z-index: 1;
+    }
 </style>
 
 <body>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <!-- Brand dan tombol toggle -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-id">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/"><img src="<?php echo base_url(); ?>assets/img/logo-hoh-nobg.png" alt=""></a>
+            </div>
 
+            <!-- Menu -->
+            <div class="collapse navbar-collapse" id="navbar-collapse-id">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="/">Beranda</a></li>
+                    <li><a href="/produk">Produk</a></li>
+                    <li><a href="/tentang">Tentang</a></li>
+                    <li><a href="/kontak">Kontak</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="/login"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
@@ -63,8 +111,8 @@
                     </div>
                     <!-- /.card-header -->
 
-                    <div class="card-body table-responsive p-0">
-                        <table class="table table-hover text-nowrap">
+                    <div class="card-body table-responsive p-0" style="max-height: 300px; overflow-y: auto;">
+                        <table class="table table-hover text-nowrap table-fixed-header">
                             <thead>
                                 <tr>
                                     <th>No</th>
@@ -81,6 +129,28 @@
                         </table>
                     </div>
                     <!-- /.card-body -->
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div id="myModal" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Modal Header</h4>
+                    </div>
+                    <div class="modal-body" id="modalbody">
+                        <p>Some text in the modal.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary" id="submit_jemaat">Submit</button>
+                    </div>
                 </div>
 
             </div>

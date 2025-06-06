@@ -29,4 +29,25 @@ class JemaatController extends BaseController
         $res = $this->jemaat_model->getJemaat();
         return $res;
     }
+
+    public function setJemaat()
+    {
+        // $data = [
+        //     'fullname' => $this->request->getPost('fullname'),
+        //     'dob'      => $this->request->getPost('dob'),
+        //     'numb'     => $this->request->getPost('number'),
+        //     'addr'     => $this->request->getPost('addr'),
+        //     'isactive' => $this->request->getPost('isactive'),
+        //     'id'       => $this->request->getPost('id')
+        // ];
+        // var_dump($this->request->getPost());
+        // die;
+        $res = $this->jemaat_model->setJemaat($this->request->getPost());
+        return $res;
+    }
+
+    public function addForm()
+    {
+        echo view('form/add-jemaat');
+    }
 }

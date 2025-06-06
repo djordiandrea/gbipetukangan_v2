@@ -20,4 +20,10 @@ class JemaatModel extends Model
         $result = $this->client->get('https://api.gbipetukangan.com/api/getdatajemaat');
         return $result->getBody();
     }
+
+    public function setJemaat($data)
+    {
+        $result = $this->client->post('https://api.gbipetukangan.com/api/setdatajemaat', ['json' => $data]);
+        return $result->getBody();
+    }
 }
