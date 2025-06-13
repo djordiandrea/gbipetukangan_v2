@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <style>
@@ -16,6 +17,8 @@
             font: 400 15px Lato, sans-serif;
             line-height: 1.8;
             color: #818181;
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
         }
 
         h2 {
@@ -194,6 +197,52 @@
             visibility: visible;
         }
 
+        .background {
+            /* background: linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)),
+                url('https://c4.wallpaperflare.com/wallpaper/366/941/298/minimalism-simple-jesus-christ-cross-religious-hd-wallpaper-preview.jpg') center center / cover no-repeat;
+            min-height: 100vh;
+            padding: 80px 20px;
+            text-align: center; */
+            background: linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)),
+                url('<?php echo base_url() ?>assets/img/cross.jpg') center center / cover no-repeat fixed;
+            color: #fff;
+            position: relative;
+            z-index: 1;
+            min-height: 100vh;
+            padding: 80px 20px;
+            text-align: center;
+        }
+
+        .background h1 {
+            font-size: 60px;
+            margin-bottom: 40px;
+            font-weight: 800;
+            color: #222;
+        }
+
+        .web-menu h1 {
+            font-size: 60px;
+            margin-bottom: 40px;
+            font-weight: 800;
+            color: #222;
+        }
+
+        .web-menu h2 {
+            font-size: 48px;
+            margin-bottom: 40px;
+            font-weight: 600;
+            color: #222;
+        }
+
+        .background ol {
+            max-width: 900px;
+            margin: auto;
+            text-align: left;
+            font-size: 20px;
+            color: #333;
+            line-height: 1.8;
+        }
+
         @keyframes slide {
             0% {
                 opacity: 0;
@@ -227,6 +276,14 @@
             .btn-lg {
                 width: 100%;
                 margin-bottom: 35px;
+            }
+
+            .background h1 {
+                font-size: 40px;
+            }
+
+            .background ol {
+                font-size: 18px;
             }
         }
 
@@ -298,10 +355,10 @@
     </nav>
 
     <!-- Container (About Section) -->
-    <div id="about" class="container-fluid">
+    <div id="about" class="container-fluid web-menu">
         <div class="row">
             <div class="col-sm-8">
-                <h2>About GBI House of Happiness</h2><br>
+                <h2>GBI Petukangan</h2><br>
                 <h4>1990, Pdt. Ir. Niko Njotorahardjo mendapatkan visi untuk melakukan Pemulihan Pondok Daud yaitu Pemulihan Pujian dan Penyembahan di beberapa daerah, termasuk di petukangan.</h4><br>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                 <br><button class="btn btn-default btn-lg">Get in Touch</button>
@@ -313,10 +370,9 @@
         </div>
     </div>
 
-    <div class="container-fluid bg-grey">
+    <!-- <div class="container-fluid bg-grey">
         <div class="row">
             <div class="col-sm-4">
-                <!-- <span class="glyphicon glyphicon-globe logo slideanim"></span> -->
                 <img src="<?php echo base_url() ?>assets/img/ruddy-lae-sq.png" alt="" srcset="" style="width:80%; height:80%;" class="slideanim">
             </div>
             <div class="col-sm-8">
@@ -326,53 +382,25 @@
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
             </div>
         </div>
-    </div>
+    </div> -->
 
     <!-- Container (Services Section) -->
-    <div id="services" class="container-fluid text-center">
-        <h2>SERVICES</h2>
-        <!-- <h4>What we offer</h4> -->
-        <br>
-        <div class="row slideanim">
-            <div class="col-sm-4">
-                <span class="glyphicon glyphicon-earphone logo-small"></span>
-                <h4>CALL</h4>
-                <p>We Always Help Our Congregation 24/7</p>
-            </div>
-            <div class="col-sm-4">
-                <span class="glyphicon glyphicon-heart logo-small"></span>
-                <h4>LOVE</h4>
-                <p>We Always Serve With Heart</p>
-            </div>
-            <div class="col-sm-4">
-                <span class="glyphicon glyphicon-search logo-small"></span>
-                <h4>JOB DONE</h4>
-                <p>Lorem ipsum dolor sit amet..</p>
-            </div>
-        </div>
-        <br><br>
-        <div class="row slideanim">
-            <div class="col-sm-4">
-                <span class="glyphicon glyphicon-fire logo-small"></span>
-                <h4>FIRE</h4>
-                <p>Making Our Congregation Always On Fire With Jesus</p>
-            </div>
-            <div class="col-sm-4">
-                <span class="glyphicon glyphicon-star logo-small"></span>
-                <h4>CERTIFIED</h4>
-                <p>Lorem ipsum dolor sit amet..</p>
-            </div>
-            <div class="col-sm-4">
-                <span class="glyphicon glyphicon-wrench logo-small"></span>
-                <h4 style="color:#303030;">HARD WORK</h4>
-                <p>Lorem ipsum dolor sit amet..</p>
-            </div>
+    <div id="services" class="container-fluid text-center background">
+        <div class="slideanim">
+            <h1>PENTAKOSTA KETIGA</h1>
+            <ol>
+                <li>Pentakosta Ketiga adalah pencurahan Roh Kudus yang dahsyat di zaman ini melebihi yang terjadi di Azusa Street.</li>
+                <li>Pentakosta Ketiga akan mengakibatkan penuaian jiwa yang terbesar dan yang terakhir sebelum Tuhan Yesus datang kembali.</li>
+                <li>Pentakosta Ketiga akan membangkitkan generasi Yeremia yaitu anak-anak muda yang dipenuhi Roh Kudus, cinta mati-matian kepada Tuhan Yesus, tidak kompromi terhadap dosa dan akan bergerak untuk memenangkan jiwa.</li>
+                <li>Pentakosta Ketiga lahir di Indonesia dan bergerak ke bangsa-bangsa. Gerakan ini dari Timur ke Barat dan kembali ke Yerusalem.</li>
+                <li>Pentakosta Ketiga akan memberikan kuasa untuk menyelesaikan Amanat Agung dan setelah itu Tuhan Yesus datang kembali.</li>
+            </ol>
         </div>
     </div>
 
     <!-- Container (Portfolio Section) -->
 
-    <div id="ibadah" class="container-fluid text-center bg-grey">
+    <div id="ibadah" class="container-fluid text-center bg-grey web-menu">
         <h2>Ibadah</h2><br>
         <div class="row text-center slideanim">
             <div class="col-sm-4">
@@ -413,7 +441,7 @@
 
 
     <!-- Container (Pricing Section) -->
-    <div id="alamat" class="container-fluid">
+    <div id="alamat" class="container-fluid web-menu">
         <div class="text-center">
             <h2>Alamat</h2>
             <p>Jl. Ciledug Raya, RT.10/RW.2, Petukangan Utara, Kec. Pesanggrahan, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12260</p>
@@ -424,13 +452,13 @@
     </div>
 
     <!-- Container (Contact Section) -->
-    <div id="contact" class="container-fluid bg-grey">
-        <h2 class="text-center">CONTACT</h2>
+    <div id="contact" class="container-fluid bg-grey web-menu">
+        <h2 class="text-center">CONTACT</h2><br>
         <div class="row">
             <div class="col-sm-5">
                 <p>Contact us and we'll get back to you within 24 hours.</p>
                 <p><span class="glyphicon glyphicon-map-marker"></span> Jakarta, ID</p>
-                <p><span class="glyphicon glyphicon-phone"></span> +00 1515151515</p>
+                <p><span class="glyphicon glyphicon-phone"></span> +62 81213400273 - Devi</p>
                 <p><span class="glyphicon glyphicon-envelope"></span> djordi@dyadev.com</p>
             </div>
             <div class="col-sm-7 slideanim">
@@ -456,13 +484,19 @@
         <a href="#myPage" title="To Top">
             <span class="glyphicon glyphicon-chevron-up"></span>
         </a>
-        <p>Bootstrap Theme Made By <a href="https://www.w3schools.com" title="Visit w3schools">www.w3schools.com</a></p>
+        <!-- Social Media Icons -->
+        <div class="mt-3 pull-right">
+            <a href="https://www.instagram.com/gbihouseofhappiness/" target="_blank" style="margin-right: 10px;" alt="GBI Petukangan">
+                <i class="fab fa-instagram fa-2x"></i>
+            </a>
+            <a href="https://www.youtube.com/@gbihouseofhappinesspetukan6443" target="_blank">
+                <i class="fab fa-youtube fa-2x"></i>
+            </a>
+        </div>
     </footer>
 
     <!-- jQuery -->
-    <script src="../../plugins/jquery/jquery.min.js"></script>
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> -->
-
+    <script src="<?php echo base_url(); ?>assets/js/seo.js" defer></script>
     <script>
         $(document).ready(function() {
             // Add smooth scrolling to all links in navbar + footer link

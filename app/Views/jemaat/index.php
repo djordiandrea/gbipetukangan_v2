@@ -156,6 +156,7 @@
             </div>
         </div>
     </div>
+    <script src="<?php echo base_url(); ?>assets/js/seo.js" defer></script>
     <script src="<?php echo base_url(); ?>assets/js/global.js?v=<?php echo (rand()); ?>"></script>
     <script src="<?php echo base_url(); ?>assets/js/jemaat.js?v=<?php echo (rand()); ?>"></script>
 </body>
