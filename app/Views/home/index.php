@@ -228,10 +228,19 @@
         }
 
         .web-menu h2 {
-            font-size: 48px;
-            margin-bottom: 40px;
-            font-weight: 600;
+            font-size: 32px;
+            /* margin-bottom: 40px; */
+            font-weight: 800;
             color: #222;
+        }
+
+        .schedule-box {
+            background: linear-gradient(to right, #ff9a3c, #ff6a00);
+            color: white;
+            padding: 30px;
+            border-radius: 12px;
+            margin: 30px 0;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
         }
 
         .background ol {
@@ -345,10 +354,10 @@
             <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="#about" class="color-change" style="color: #fff;">TENTANG</a></li>
-                    <li><a href="#services" class="color-change" style="color: #fff;">SERVICES</a></li>
+                    <li><a href="#services" class="color-change" style="color: #fff;">DEKLARASI</a></li>
                     <li><a href="#ibadah" class="color-change" style="color: #fff;">IBADAH</a></li>
                     <li><a href="#alamat" class="color-change" style="color: #fff;">ALAMAT</a></li>
-                    <li><a href="#contact" class="color-change" style="color: #fff;">CONTACT</a></li>
+                    <li><a href="#contact" class="color-change" style="color: #fff;">KONTAK</a></li>
                 </ul>
             </div>
         </div>
@@ -359,9 +368,20 @@
         <div class="row">
             <div class="col-sm-8">
                 <h2>GBI Petukangan</h2><br>
-                <h4>1990, Pdt. Ir. Niko Njotorahardjo mendapatkan visi untuk melakukan Pemulihan Pondok Daud yaitu Pemulihan Pujian dan Penyembahan di beberapa daerah, termasuk di petukangan.</h4><br>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                <br><button class="btn btn-default btn-lg">Get in Touch</button>
+                <h4>1990, Pdt. Ir. Niko Njotorahardjo mendapatkan visi untuk melakukan Pemulihan Pondok Daud yaitu Pemulihan Pujian dan Penyembahan di beberapa daerah, termasuk di petukangan.</h4>
+                <p>
+                    GBI Petukangan berawal dari sebuah Family Altar (FA) kecil di Ciledug pada tahun 1996. Dengan semangat visi
+                    <strong>Pemulihan Pondok Daud</strong>, ibadah perdana diadakan pada 2 Maret 1997 dan terus berkembang meski berpindah-pindah lokasi.
+                </p>
+                <p>
+                    Berbagai tantangan dilalui hingga akhirnya pada 4 Mei 1997, GBI Petukangan mendapat tempat ibadah di
+                    <strong>Universitas Budi Luhur</strong>. Seiring pertumbuhan jemaat, pelayanan pun meluas: dari FA, ibadah youth, hingga misi sosial.
+                </p>
+                <p>
+                    Kini, GBI Petukangan dikenal sebagai <strong>GBI House of Happiness</strong>, bagian dari Rayon IE GBI Jl. Gatot Subroto, dengan lokasi sekretariat di:
+                    <em>Komp. Ruko G-77 No.10, Jl. H.O.S. Cokroaminoto, Kreo, Larangan, Ciledug - Tangerang</em>.
+                </p>
+                <br><button class="btn btn-default btn-lg"><a href="tel:+6281213400273">Get in Touch</a></button>
             </div>
             <div class="col-sm-4">
                 <!-- <span class="glyphicon glyphicon-signal logo slideanim"></span> -->
@@ -437,6 +457,13 @@
                 </div>
             </div>
         </div><br>
+        <div class="schedule-box">
+            <h2 style="color:white;">🕘 Jadwal Ibadah Mingguan</h2>
+            <p><strong>Setiap Hari Minggu</strong></p>
+            <h3>⏰ Jam 09.00 WIB</h3>
+            <p>Lokasi: GBI Petukangan, Jakarta Selatan</p>
+        </div>
+
     </div>
 
 
@@ -447,7 +474,8 @@
             <p>Jl. Ciledug Raya, RT.10/RW.2, Petukangan Utara, Kec. Pesanggrahan, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12260</p>
         </div>
         <div class="row slideanim">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1249.280604019982!2d106.74630552829191!3d-6.234914286639473!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f14675571c2f%3A0x50fb188c327c6bae!2sUniversitas%20Budi%20Luhur!5e0!3m2!1sen!2sid!4v1748636544519!5m2!1sen!2sid" width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1249.280604019982!2d106.74630552829191!3d-6.234914286639473!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f14675571c2f%3A0x50fb188c327c6bae!2sUniversitas%20Budi%20Luhur!5e0!3m2!1sen!2sid!4v1748636544519!5m2!1sen!2sid" width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.218839061234!2d106.74259342253208!3d-6.234858471194194!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f10021c51177%3A0x28dcb705928bb0a0!2sGBI%20Petukangan!5e0!3m2!1sen!2sid!4v1749863737200!5m2!1sen!2sid" width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
     </div>
 
